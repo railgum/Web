@@ -6,7 +6,7 @@ a{
     cursor: pointer;
 }
 .container {
-    background-color: #87750840;
+    background-color: #fcf5d1;
     padding: 20px 0 20px;
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -23,7 +23,6 @@ a{
     height: 170px;
     border: 9px outset #22b804;
     display: flex;
-
 }
 .logo{
     padding-top: 10px;
@@ -37,6 +36,28 @@ a{
     width: 200px;
     height: 160px;
 }
+.toogle_thema{
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+#toggle-theme-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 2s;
+}
+#toggle-theme-btn:hover{
+    background-color: #ec516b;
+}
+
+.toggle-theme-image{
+    width: 30px;
+}
+.sun{
+    display: none;
+}
 .menu{
     width: 800px;
     margin-left: 50px;
@@ -49,18 +70,43 @@ a{
     justify-content: center;
 }
 .menu nav{
-    display: flex;
+    /* display: flex; */
 }
-.menu li{
+.menu nav ul{
+    position: relative;
+}
+.menu nav ul ul{
+    display: none;
+    position: absolute;
+}
+.menu ul li{
     list-style-type: none;
     margin-top: 50px;
-    margin-right: auto;
+    display: inline-block;
+    margin-right: 20px;
 }
-.menu a {
+.menu ul li:hover > ul{
+    display: inherit;
+    background-color: #fcf5d1;
+    padding-left: 20px;
+    
+}
+.menu ul ul{
+    width: 170px;
+}
+.menu ul ul li{
+    position: relative;
+    /* min-width: 50px; */
+}
+.menu ul ul li:hover{
+    background-color: #9df3e0;
+}
+.menu nav a {
+    display: block;
     text-decoration: none;
     color: brown;
     font-weight: 700;
-    font-size: large;
+    font-size: 1em;
 }
 .content {
     width: 90%;

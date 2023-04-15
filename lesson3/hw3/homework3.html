@@ -16,15 +16,30 @@
             <div class="logo_img">
                 <img src="/lesson3/hw3/image/logo (1).png" alt="logo">
             </div>
+            <div class="toogle_thema">
+                <button id="toggle-theme-btn">
+                    <img src="/lesson3/hw3/image/moon.png" alt="moon-toggle" class="toggle-theme-image moon">
+                    <img src="/lesson3/hw3/image/sun.png" alt="sun-toggle" class="toggle-theme-image sun">
+                </button>
+            </div>
             <div class="menu">
               <div class="logo_title">
                     <h1>Фёдор - вислоух</h1>
               </div>
               <nav>
-                  <li><a href="./homework3.html">Главная</a></li>
-                  <li><a href="#gallery">Фотки</a></li>
-                  <li><a href="#about">Информация</a></li>
-                  <li><a href="#contacts">Контакты</a></li>
+                <ul>
+                    <li><a href="./homework3.html">Главная</a></li>
+                    <li><a href="#gallery">Фотки</a></li>
+                    <li><a href="#about">Информация</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#">Домашка</a>
+                        <ul id="homework">
+                            <li><a class="task_1" href="#">ДЗ№3_1</a></li>
+                            <li><a class="task_2" href="#">ДЗ№3_2</a></li>
+                            <li><a class="task_3" href="#">ДЗ№3_3</a></li>
+                        </ul>
+                    </li>
+                </ul>
               </nav>
             </div>
         </header>
@@ -33,7 +48,7 @@
               <img src="/lesson3/hw3/image/main_2.jpg" alt="cat">
             </div>
             <div id="gallery">
-                <p class="link_main"><a href="/homework2.html">На главную</a></p>
+                <p class="link_main"><a href="/lesson3/hw3/homework3.html">На главную</a></p>
                 <div class="gallery_name">
                     <h2>Мои фото</h2>
                 </div>
@@ -47,7 +62,7 @@
                 </div>
             </div>
             <div id="about">
-                <p class="link_main"><a href="homework3.html">На главную</a></p>
+                <p class="link_main"><a href="/lesson3/hw3/homework3.html">На главную</a></p>
                 <div class="about_title">
                     <h2>Обо мне</h2>
                 </div>
@@ -67,10 +82,12 @@
                 <p><span>Email:  </span>fedor@catmail.com</p>
                 <p><span>Address:  </span>Country - Котландия, City - Вискас, Street - Диванная, House - 33, Flat - 5
                 </p>
-                <p class="link_main link_main_footer"><a href="/homework2.html">На главную</a></p>
+                <p class="link_main link_main_footer"><a href="/lesson3/hw3/homework3.html">На главную</a></p>
             </div>
         </footer>
         <p class="copy">Это страница кота. Честно, он сам сделал. &copy;Все права защищены</p>
     </div>
+<script src="/lesson3/hw3/js/main.js"></script>
+<script src="/lesson3/hw3/js/dark_theme.js"></script>
 </body>
 </html>
