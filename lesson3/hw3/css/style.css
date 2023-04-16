@@ -1,16 +1,33 @@
+
+:root{
+    --background: #fcf5d1;
+    --menu-color: #c72828;
+    --text-color: #141313;
+    --link-main: #246b16;
+}
 *{
     margin: 0;
     padding: 0;
 }
-a{
+body.dark{
+    --box-shadow-color: #cbc6c6;
+    --background: #463b3b;
+    --background-body: #9b9090;
+    --tongle: #dbdbdb;
+    --menu-color: #f8e6c0;
+    --text-color: #eef1bc;
+    --link-main: #dafad0;
+}
+a, input{
     cursor: pointer;
 }
 .container {
-    background-color: #fcf5d1;
+    background-color: var(--background);
     padding: 20px 0 20px;
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
+
 .header, .footer{
     border-radius: 23px 23px 23px 23px;
     -moz-border-radius: 23px 23px 23px 23px;
@@ -44,20 +61,28 @@ a{
 #toggle-theme-btn{
     border: none;
     background-color: transparent;
-    cursor: pointer;
     border-radius: 10px;
     transition: 2s;
+    transition-duration: 0ms;
 }
 #toggle-theme-btn:hover{
     background-color: #ec516b;
 }
+#toggle-theme-image.moon{
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    background: url("/lesson3/hw3/image/moon.png") no-repeat;
+}
+#toggle-theme-image.sun{
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    background: url("/lesson3/hw3/image/sun.png") no-repeat;
+}
 
-.toggle-theme-image{
-    width: 30px;
-}
-.sun{
-    display: none;
-}
 .menu{
     width: 800px;
     margin-left: 50px;
@@ -68,9 +93,6 @@ a{
 }
 .logo h1{
     justify-content: center;
-}
-.menu nav{
-    /* display: flex; */
 }
 .menu nav ul{
     position: relative;
@@ -87,7 +109,7 @@ a{
 }
 .menu ul li:hover > ul{
     display: inherit;
-    background-color: #fcf5d1;
+    background-color: var(--color);
     padding-left: 20px;
     
 }
@@ -104,7 +126,7 @@ a{
 .menu nav a {
     display: block;
     text-decoration: none;
-    color: brown;
+    color: var(--menu-color);
     font-weight: 700;
     font-size: 1em;
 }
@@ -139,7 +161,7 @@ a{
     position: static;
 }
 .link_main a{
-    color: #19500efb;
+    color: var(--link-main);
     font-weight: 600;
 }
 .link_main_footer a{
@@ -148,7 +170,7 @@ a{
 .gallery_name,.about_title {
     text-align: center;
     margin: 40px;
-    color: brown;
+    color: var(--menu-color);
 }
 .gallery_image {
     display: grid;
@@ -176,6 +198,7 @@ a{
     padding-bottom: 20px;
     border-bottom: 3px dotted #000;
     font-weight: 600;
+    color: var(--text-color);
 }
 .footer {
     display: flex;
@@ -198,6 +221,7 @@ a{
     font-weight: 600;
 }
 .copy{
-    width: 1000px;
+    text-align: center;
     margin: 40px auto 0;
+    color: var(--text-color);
 }
