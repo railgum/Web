@@ -1,0 +1,226 @@
+
+:root{
+    --background: #fcf5d1;
+    --menu-color: #c72828;
+    --text-color: #141313;
+    --link-main: #246b16;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body.dark{
+    --box-shadow-color: #cbc6c6;
+    --background: #463b3b;
+    --background-body: #9b9090;
+    --tongle: #dbdbdb;
+    --menu-color: #f8e6c0;
+    --text-color: #eef1bc;
+    --link-main: #dafad0;
+}
+a, input{
+    cursor: pointer;
+}
+.container {
+    background-color: var(--background);
+    padding: 20px 0 20px;
+    min-height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header, .footer{
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+}
+.header {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 90%;
+    height: 170px;
+    border: 9px outset #22b804;
+    display: flex;
+}
+.logo{
+    padding-top: 10px;
+    height: 60%;
+}
+.logo_img{
+    flex: 0 0 300px;
+}
+.logo_img img {
+    margin-left: 40px;
+    width: 200px;
+    height: 160px;
+}
+.toogle_thema{
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+#toggle-theme-btn{
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: 2s;
+    transition-duration: 0ms;
+}
+#toggle-theme-btn:hover{
+    background-color: #ec516b;
+}
+#toggle-theme-image.moon{
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    background: url("/lesson3/hw3/image/moon.png") no-repeat;
+}
+#toggle-theme-image.sun{
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    background: url("/lesson3/hw3/image/sun.png") no-repeat;
+}
+.menu{
+    width: 800px;
+    margin-left: 50px;
+}
+.logo_title{
+    /* margin-left: 50px; */
+    color: #5663EE;
+}
+.logo h1{
+    justify-content: center;
+}
+.menu nav ul{
+    position: relative;
+}
+.menu nav ul ul{
+    display: none;
+    position: absolute;
+}
+.menu ul li{
+    list-style-type: none;
+    margin-top: 50px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu ul li:hover > ul{
+    display: inherit;
+    background-color: var(--color);
+    padding-left: 20px;
+    
+}
+.menu ul ul{
+    width: 170px;
+}
+.menu ul ul li{
+    position: relative;
+    /* min-width: 50px; */
+}
+.menu ul ul li:hover{
+    background-color: #9df3e0;
+}
+.menu nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--menu-color);
+    font-weight: 700;
+    font-size: 1em;
+}
+.content {
+    width: 90%;
+    margin: 0 auto;
+    min-height: calc(100vh - 200px - 170px);
+}
+.main_img {
+    margin: 30px auto;
+    width: 80%;    
+}
+.main_img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    box-shadow: 2px 1px 5px #999999;
+}
+#gallery {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+.link_main{
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+.link_main_footer{
+    position: static;
+}
+.link_main a{
+    color: var(--link-main);
+    font-weight: 600;
+}
+.link_main_footer a{
+    color: #FEFFDC;
+}
+.gallery_name,.about_title {
+    text-align: center;
+    margin: 40px;
+    color: var(--menu-color);
+}
+.gallery_image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+.gallery_image img{
+    margin: 30px;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    box-shadow: 2px 1px 5px #999999;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+.about_text p{
+    text-indent: 30px;
+    line-height: 1.4;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px dotted #000;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    border: 9px outset #DC711C;
+    margin-top: 40px;
+    height: 200px;
+    background-color: #3B1E5F;
+}
+#contacts {
+    color: #FEFFDC;
+    padding: 20px 30px;
+}
+#contacts p{
+    margin-bottom: 18px;
+}
+#contacts span{
+    font-weight: 600;
+}
+.copy{
+    text-align: center;
+    margin: 40px auto 0;
+    color: var(--text-color);
+}
