@@ -13,6 +13,11 @@ $skills_name = [
   "Копирайтинг"
 ];
 $skills_value = [97, 83, 70, 80];
+
+// Домашнее задание 1----------
+$position = [];
+$date_work = [];
+$comment = [];
 ?>
 
 <!DOCTYPE html>
@@ -54,9 +59,11 @@ $skills_value = [97, 83, 70, 80];
 
         <div class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container">
-            <img src="https://imgfon.ru/Images/Details_img_880px/Animals/glaza-belyy_fon-kotik-morda-polosatyy.webp" style="width:100%" alt="Avatar">
+            <!-- <img src="https://imgfon.ru/Images/Details_img_880px/Animals/glaza-belyy_fon-kotik-morda-polosatyy.webp" style="width:100%" alt="Avatar"> -->
+            <img src="https://imgfon.ru/Images/Details_img_880px/Funny/chizburger-eda-pol-reptiliya-zelen.webp?img.1" style="width:100%" alt="Avatar">
+
             <div class="w3-display-bottomleft w3-container w3-text-black">
-              <h2><? echo $name ?></h2>
+              <h2 style="font-weight: 900;"><? echo $name ?></h2>
             </div>
           </div>
           <div class="w3-container">
