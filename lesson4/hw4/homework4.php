@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <title>Про кота</title>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -22,32 +24,32 @@
                 </button>
             </div>
             <div class="menu">
-              <div class="logo_title">
+                <div class="logo_title">
                     <h1>Фёдор - вислоух</h1>
-              </div>
-              <nav>
-                <ul>
-                    <li><a href="./homework3.html">Главная</a></li>
-                    <li><a href="#gallery">Фотки</a></li>
-                    <li><a href="#about">Информация</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                    <li><a href="#">Домашка</a>
-                        <ul id="homework">
-                            <li><a class="task_1" href="#">ДЗ№3_1</a></li>
-                            <li><a class="task_2" href="#">ДЗ№3_2</a></li>
-                            <li><a class="task_3" href="#">ДЗ№3_3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-              </nav>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./homework4.php">Главная</a></li>
+                        <li><a href="#gallery">Фотки</a></li>
+                        <li><a href="#about">Информация</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#">Домашка</a>
+                            <ul id="homework">
+                                <li><a class="task_1" href="#">ДЗ№3_1</a></li>
+                                <li><a class="task_2" href="#">ДЗ№3_2</a></li>
+                                <li><a class="task_3" href="#">ДЗ№3_3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <main class="content">
             <div class="main_img">
-              <img src="/lesson4/hw4/image/main_2.jpg" alt="cat">
+                <img src="/lesson4/hw4/image/main_2.jpg" alt="cat">
             </div>
             <div id="gallery">
-                <p class="link_main"><a href="/lesson4/hw4/homework3.html">На главную</a></p>
+                <p class="link_main"><a href="/lesson4/hw4/homework4.php">На главную</a></p>
                 <div class="gallery_name">
                     <h2>Мои фото</h2>
                 </div>
@@ -61,7 +63,7 @@
                 </div>
             </div>
             <div id="about">
-                <p class="link_main"><a href="/lesson4/hw4/homework3.html">На главную</a></p>
+                <p class="link_main"><a href="/lesson4/hw4/homework4.php">На главную</a></p>
                 <div class="about_title">
                     <h2>Обо мне</h2>
                 </div>
@@ -77,16 +79,17 @@
         </main>
         <footer class="footer">
             <div id="contacts">
-                <p><span>Phone:  </span>Answerphone - 8888888888</p>
-                <p><span>Email:  </span>fedor@catmail.com</p>
-                <p><span>Address:  </span>Country - Котландия, City - Вискас, Street - Диванная, House - 33, Flat - 5
+                <p><span>Phone: </span>Answerphone - 8888888888</p>
+                <p><span>Email: </span>fedor@catmail.com</p>
+                <p><span>Address: </span>Country - Котландия, City - Вискас, Street - Диванная, House - 33, Flat - 5
                 </p>
-                <p class="link_main link_main_footer"><a href="/lesson4/hw4/homework3.html">На главную</a></p>
+                <p class="link_main link_main_footer"><a href="/lesson4/hw4/homework4.php">На главную</a></p>
             </div>
         </footer>
         <p class="copy">Это страница кота. Честно, он сам сделал. &copy;Все права защищены</p>
     </div>
-<script src="/lesson4/hw4/js/main.js"></script>
-<script src="/lesson4/hw4/js/dark_theme.js"></script>
+    <script src="/lesson4/hw4/js/main.js"></script>
+    <script src="/lesson4/hw4/js/dark_theme.js"></script>
 </body>
+
 </html>

@@ -112,8 +112,9 @@ a, input{
     padding-left: 20px;
     
 }
-.menu ul ul{
+#homework{
     width: 170px;
+    background-color: var(--background);
 }
 .menu ul ul li{
     position: relative;
