@@ -1,0 +1,9 @@
+{
+    "cinema": [
+        {"name" : "Avatar", "genre" : "Fantasy", "release date" : 2009},
+        {"name" : "А зори здесь тихие", "genre" : "Drama", "release date" : 1972},
+        {"name" : "Pulp Fiction", "genre" : "Action", "release date" : 1994},
+        {"name" : "Джентельмены удачи", "genre" : "Comedy", "release date" : 1971},
+        {"name" : "Место встречи изменить нельзя", "genre" : "Detective", "release date" : 1979}   
+    ]
+}
